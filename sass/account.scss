@@ -1,0 +1,142 @@
+@use "./components";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.account-info {
+    position: relative;
+    display: flex;
+    min-height: 70px;
+    background-color: #FD9800;
+    margin-top: 50px;
+    padding: 10px;
+
+    &__img {
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__left-side {
+        min-height: 100%;
+        width: 40%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__right-side {
+        min-height: 100%;
+        width: 60%;
+        display: flex;
+    }
+
+    &__box {
+        height: 100%;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+.goal {
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__switch {
+        position: relative;
+        width: 40px;
+        height: 16px;
+        border-radius: 8px;
+        background-color: #CCC8C3;
+        cursor: pointer;
+        transition: background-color .3s;
+    }
+
+    &__switch--active {
+        background-color: #FD9800;
+    }
+
+    &__switch-ball {
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        width: 12px;
+        height: 12px;
+        background-color: #6F6C67;
+        border-radius: 50%;
+        transition: background-color .3s, right .3s;
+    }
+
+    &__switch-ball--active {
+        right: 25px;
+        background-color: #DF6B00;
+    }
+}
+
+.activity {
+    background-color: #000;
+    color: #fff;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    input {
+        display: grid;
+        place-content: center;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background-color: #000;
+        border: 2px solid #FD9800;
+        border-radius: 50%;
+
+        &::before {
+            content: "";
+            width: 13px;
+            height: 13px;
+            background-color: #FD9800;
+            border-radius: 50%;
+            transform: scale(0);
+        }
+
+        &:checked::before {
+            transform: scale(1);
+        }
+    }
+}

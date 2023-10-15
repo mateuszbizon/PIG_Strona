@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konto</title>
+    <link rel="stylesheet" href="css/account.css">
+    <script src="https://kit.fontawesome.com/047849f5b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-box">
+        <nav class="nav">
+            <span class="nav__text">Człowieku ruszamy się!</span>
+            <div class="nav__burger">
+                <div class="nav__burger-line"></div>
+                <div class="nav__burger-line"></div>
+                <div class="nav__burger-line"></div>
+            </div>
+        </nav>
+        <nav class="floating-nav">
+            <div class="floating-nav__top">
+                <a href="index.html" class="floating-nav__top-text">Home</a>
+                <i class="fa-solid fa-x floating-nav__top-close-icon"></i>
+            </div>
+            <div class="floating-nav__main">
+                <ul class="floating-nav__list">
+                    <li class="floating-nav__list-item"><a href="#">kontrola wagi</a></li>
+                    <li class="floating-nav__list-item"><a href="#">kontrola kondycji</a></li>
+                    <li class="floating-nav__list-item"><a href="#">kontrola kalori</a></li>
+                    <li class="floating-nav__list-item"><a href="#">kontrola tętna</a></li>
+                    <li class="floating-nav__list-item"><a href="#">kontrola przewyższeń</a></li>
+                    <li class="floating-nav__list-item"><a href="#">podziękowanie</a></li>
+                </ul>
+            </div>
+            <section class="floating-nav__btn-section section-padding">
+                <a href="account.html" class="main-btn">Moje konto</a>
+            </section>
+        </nav>
+
+        <div class="account-info">
+            <img class="account-info__img" src="img/account-img.jpg" alt="zdjęcie profilowe">
+            <div class="account-info__left-side">
+                <b><span>Mateusz Bizoń</span></b>
+            </div>
+            <div class="account-info__right-side">
+                <div class="account-info__box">
+                    <b><span>Waga</span></b>
+                    <span>91,1</span>
+                </div>
+                <div class="account-info__box">
+                    <b><span>Wzrost</span></b>
+                    <span>184</span>
+                </div>
+                <div class="account-info__box">
+                    <b><span>Wiek</span></b>
+                    <span>23</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="goal section-padding">
+            <h2 class="goal__title">Cel</h2>
+            <div class="goal__box">
+                <span>zbić kilogramy</span>
+                <div class="goal__switch goal__switch--active">
+                    <div class="goal__switch-ball goal__switch-ball--active"></div>
+                </div>
+            </div>
+            <div class="goal__box">
+                <span>przebiec dystans</span>
+                <div class="goal__switch">
+                    <div class="goal__switch-ball"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="activity section-padding">
+            <h2 class="activity__title">Aktualna aktywność</h2>
+            <div class="activity__box">
+                <span>trening raz w tygodniu</span>
+                <input type="radio" name="activity" checked>
+            </div>
+            <div class="activity__box">
+                <span>trening dwa razy w tygodniu</span>
+                <input type="radio" name="activity">
+            </div>
+            <div class="activity__box">
+                <span>trening kilka razy w tygodniu</span>
+                <input type="radio" name="activity">
+            </div>
+            <div class="activity__box">
+                <span>brak treningu</span>
+                <input type="radio" name="activity">
+            </div>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/account.js"></script>
+</body>
+</html>
