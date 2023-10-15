@@ -1,0 +1,19 @@
+@use "./components";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.thanks {
+    font-weight: bold;
+
+    &__text {
+        text-align: center;
+    }
+
+    &__text, &__text-bank-account {
+        margin-bottom: 30px;
+    }
+}
