@@ -7,3 +7,9 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+@media (min-width: 576px) {
+    .main-box {
+        width: 360px;
+    }
+}

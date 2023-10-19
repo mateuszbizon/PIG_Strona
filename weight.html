@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrola wagi</title>
+    <link rel="stylesheet" href="css/weight.css">
+    <script src="https://kit.fontawesome.com/047849f5b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-box">
+        <nav class="nav">
+            <span class="nav__text">Człowieku ruszamy się!</span>
+            <div class="nav__burger">
+                <div class="nav__burger-line"></div>
+                <div class="nav__burger-line"></div>
+                <div class="nav__burger-line"></div>
+            </div>
+        </nav>
+        <nav class="floating-nav">
+            <div class="floating-nav__top">
+                <a href="index.html" class="floating-nav__top-text">Home</a>
+                <i class="fa-solid fa-x floating-nav__top-close-icon"></i>
+            </div>
+            <div class="floating-nav__main">
+                <ul class="floating-nav__list">
+                    <li class="floating-nav__list-item"><a href="#">kontrola wagi</a></li>
+                    <li class="floating-nav__list-item"><a href="#">kontrola kondycji</a></li>
+                    <li class="floating-nav__list-item"><a href="#">kontrola kalori</a></li>
+                    <li class="floating-nav__list-item"><a href="#">kontrola tętna</a></li>
+                    <li class="floating-nav__list-item"><a href="#">kontrola przewyższeń</a></li>
+                    <li class="floating-nav__list-item"><a href="#">podziękowanie</a></li>
+                </ul>
+            </div>
+            <section class="floating-nav__btn-section section-padding">
+                <a href="account.html" class="main-btn">Moje konto</a>
+            </section>
+        </nav>
+
+        <section class="section-control section-padding">
+            <h2 class="section-control__title">Kontrola wagi</h2>
+            <div class="section-control__box">
+                <label for="week" class="section-control__label">Wybierz tydzień:</label>
+                <input id="week" type="week" class="section-control__input" value="tydzień 3">
+                <div class="section-control__box-data">
+                    <span class="section-control__box-data-element">poniedziałek: 91 kg</span>
+                    <span class="section-control__box-data-element">wtorek: 90.5 kg</span>
+                    <span class="section-control__box-data-element">środa: 89.2 kg</span>
+                    <span class="section-control__box-data-element">czwartek 87.9 kg</span>
+                    <span class="section-control__box-data-element">piątek 87.8 kg</span>
+                    <span class="section-control__box-data-element">sobota 88.2 kg</span>
+                    <span class="section-control__box-data-element section-control__box-data-element--centered">niedziela 88 kg</span>
+                </div>
+            </div>
+            <div class="section-control__box">
+                <label for="month" class="section-control__label">Wybierz miesiąc:</label>
+                <input id="month" type="month" class="section-control__input" value="maj 2022">
+                <div class="section-control__box-data">
+                    <span class="section-control__box-data-element">02.05-08.05: 87.4kg</span>
+                    <span class="section-control__box-data-element">09.05-15.05: 86.6 kg</span>
+                    <span class="section-control__box-data-element">16.05-22.05: 86.4kg</span>
+                    <span class="section-control__box-data-element">23.05-29.05: 86.7 kg</span>
+                    <span class="section-control__box-data-element section-control__box-data-element--centered">30.05-05.06: 86.1kg</span>
+                </div>
+            </div>
+            <div class="section-control__box">
+                <label for="year" class="section-control__label">Wybierz rok:</label>
+                <input id="year" type="number" class="section-control__input" value="2022">
+                <div class="section-control__box-data">
+                    <span class="section-control__box-data-element">styczeń: 91.1kg</span>
+                    <span class="section-control__box-data-element">luty: 90.6 kg</span>
+                    <span class="section-control__box-data-element">marzec: 89.4kg</span>
+                    <span class="section-control__box-data-element">kwiecień: 89.6 kg</span>
+                    <span class="section-control__box-data-element">maj: 91.1kg</span>
+                    <span class="section-control__box-data-element">czerwiec: 90.6 kg</span>
+                    <span class="section-control__box-data-element">lipiec: 89.4kg</span>
+                    <span class="section-control__box-data-element">sierpień: 89.6 kg</span>
+                    <span class="section-control__box-data-element">wrzesien: 91.1kg</span>
+                    <span class="section-control__box-data-element">październik: 90.6 kg</span>
+                    <span class="section-control__box-data-element">listopad: 89.4kg</span>
+                    <span class="section-control__box-data-element">grudzień: 89.6 kg</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

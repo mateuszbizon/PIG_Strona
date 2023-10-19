@@ -65,6 +65,11 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 576px) {
+  .main-box {
+    width: 360px;
+  }
+}
 .section-padding {
   padding: 30px 15px;
   font-size: 18px;
