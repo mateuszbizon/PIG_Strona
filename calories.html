@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrola kalorii</title>
+    <link rel="stylesheet" href="css/section-control.css">
+    <script src="https://kit.fontawesome.com/047849f5b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-box">
+        <nav class="nav">
+            <span class="nav__text">Człowieku ruszamy się!</span>
+            <div class="nav__burger">
+                <div class="nav__burger-line"></div>
+                <div class="nav__burger-line"></div>
+                <div class="nav__burger-line"></div>
+            </div>
+        </nav>
+        <nav class="floating-nav">
+            <div class="floating-nav__top">
+                <a href="index.html" class="floating-nav__top-text">Home</a>
+                <i class="fa-solid fa-x floating-nav__top-close-icon"></i>
+            </div>
+            <div class="floating-nav__main">
+                <ul class="floating-nav__list">
+                    <li class="floating-nav__list-item"><a href="#">kontrola wagi</a></li>
+                    <li class="floating-nav__list-item"><a href="#">kontrola kondycji</a></li>
+                    <li class="floating-nav__list-item"><a href="#">kontrola kalori</a></li>
+                    <li class="floating-nav__list-item"><a href="#">kontrola tętna</a></li>
+                    <li class="floating-nav__list-item"><a href="#">kontrola przewyższeń</a></li>
+                    <li class="floating-nav__list-item"><a href="#">podziękowanie</a></li>
+                </ul>
+            </div>
+            <section class="floating-nav__btn-section section-padding">
+                <a href="account.html" class="main-btn">Moje konto</a>
+            </section>
+        </nav>
+
+        <section class="section-control section-padding">
+            <h2 class="section-control__title">Kontrola spalonych kalorii</h2>
+            <div class="section-control__box">
+                <label for="day" class="section-control__label">Wybierz dzień:</label>
+                <input id="day" type="date" class="section-control__input">
+                <div class="section-control__box-data-amount">
+                    <span class="section-control__box-data-amount-text">Spalone kalorie:</span>
+                    <span>439</span>
+                </div>
+            </div>
+            <div class="section-control__box">
+                <label for="week" class="section-control__label">Wybierz tydzień:</label>
+                <input id="week" type="week" class="section-control__input" value="tydzień 17">
+                <div class="section-control__box-data">
+                    <span class="section-control__box-data-element">poniedziałek: 430</span>
+                    <span class="section-control__box-data-element">wtorek: 0</span>
+                    <span class="section-control__box-data-element">środa: 390</span>
+                    <span class="section-control__box-data-element">czwartek 0</span>
+                    <span class="section-control__box-data-element">piątek 410</span>
+                    <span class="section-control__box-data-element">sobota 0</span>
+                    <span class="section-control__box-data-element section-control__box-data-element--centered">niedziela 254</span>
+                </div>
+                <div class="section-control__box-data-amount">
+                    <span class="section-control__box-data-amount-text">Suma spalonych kalorii:</span>
+                    <span>1484</span>
+                </div>
+            </div>
+            <div class="section-control__box">
+                <label for="month" class="section-control__label">Wybierz miesiąc:</label>
+                <input id="month" type="month" class="section-control__input" value="luty 2022">
+                <div class="section-control__box-data">
+                    <span class="section-control__box-data-element">31.01-06.02: 1356</span>
+                    <span class="section-control__box-data-element">07.02-13.02: 1489</span>
+                    <span class="section-control__box-data-element">14.02-20.02: 1580</span>
+                    <span class="section-control__box-data-element">21.02-27.02: 1456</span>
+                    <span class="section-control__box-data-element section-control__box-data-element--centered">28.02-06.03: 1240</span>
+                </div>
+                <div class="section-control__box-data-amount">
+                    <span class="section-control__box-data-amount-text">Suma spalonych kalorii:</span>
+                    <span>7121</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
