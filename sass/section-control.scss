@@ -41,6 +41,7 @@
         gap: 10px 0;
         color: #fff;
         font-size: 16px;
+        margin-top: 15px;
     }
 
     &__box-data-element {
@@ -61,5 +62,11 @@
 
     &__box-data-amount-text {
         width: 75%;
+    }
+
+    &__box-title {
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
     }
 }
