@@ -1,3 +1,11 @@
+@use "./components";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .section-control {
     background-color: #000;
 
@@ -10,7 +18,7 @@
 
     &__box {
         width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
 
     &__label {
@@ -30,7 +38,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 7px 0;
+        gap: 10px 0;
         color: #fff;
         font-size: 16px;
     }
@@ -41,5 +49,17 @@
 
     &__box-data-element--centered {
         text-align: center;
+    }
+
+    &__box-data-amount {
+        display: flex;
+        gap: 5px;
+        color: #fff;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    &__box-data-amount-text {
+        width: 75%;
     }
 }
