@@ -205,7 +205,7 @@ body {
   gap: 10px 0;
   color: #fff;
   font-size: 16px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .section-control__box-data-element {
   width: 50%;
@@ -220,7 +220,7 @@ body {
   gap: 5px;
   color: #fff;
   font-size: 16px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .section-control__box-data-amount-text {
   width: 75%;
