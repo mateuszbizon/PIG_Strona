@@ -223,10 +223,14 @@ body {
   margin-top: 20px;
 }
 .section-control__box-data-amount-text {
-  width: 75%;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  max-width: 75%;
+  margin-right: 10px;
 }
 .section-control__box-title {
   text-align: center;
   color: #fff;
-  font-size: 16px;
+  font-size: 17px;
 }/*# sourceMappingURL=section-control.css.map */

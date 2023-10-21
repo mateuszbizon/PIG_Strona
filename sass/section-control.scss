@@ -61,12 +61,14 @@
     }
 
     &__box-data-amount-text {
-        width: 75%;
+        min-width: max-content;
+        max-width: 75%;
+        margin-right: 10px;
     }
 
     &__box-title {
         text-align: center;
         color: #fff;
-        font-size: 16px;
+        font-size: 17px;
     }
 }
